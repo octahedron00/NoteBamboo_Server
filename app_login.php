@@ -1,6 +1,6 @@
 <?php
 	$con = mysqli_connect("localhost","crud","qwerty2020","notebamboo");
-	$result = mysqli_query($con, "SELECT pw, nickname FROM user where id=".$_POST['id']);
+	$result = mysqli_query($con, "SELECT pw, nickname FROM user where id='".$_POST['id']."';");
 
 	$success = false;
 	$nickname = "";
