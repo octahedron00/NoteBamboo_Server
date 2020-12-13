@@ -2,7 +2,7 @@
 	$con = mysqli_connect("localhost","crud","qwerty2020","notebamboo");
 
 	$_POST['id'] = "testonserver";
-	$_POST['pw'] = "testonserver";
+	$_POST['pwEnc'] = "testonserver";
 	$_POST['nickname'] = "testonserver";
 	$_POST['email'] = "testonserver";
 
