@@ -14,6 +14,6 @@
 	$response = array();
 	$response["success"] = $success;
 	$response["nickname"] = $nickname;
-	echo json_encode(array("response"=>$response));
+	echo json_encode($response);
 	mysqli_close($con);
  ?>
