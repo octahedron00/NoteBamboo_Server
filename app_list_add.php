@@ -1,9 +1,9 @@
 <?php
 	$con = mysqli_connect("localhost","crud","qwerty2020","notebamboo");
 
-	$result = mysqli_query($con,"INSERT INTO base (name) VALUES '"+$_POST['name_Enc']+"';");
+	$result = mysqli_query($con,"INSERT INTO base (name) VALUES '".$_POST['name_Enc']."';");
 
-	$result = mysqli_query($con,"SELECT no FROM base WHERE name='"+$_POST['name_Enc']+"';");
+	$result = mysqli_query($con,"SELECT no FROM base WHERE name='".$_POST['name_Enc']."';");
 
 	$no = 0;
 	while($row = mysqli_fetch_array($result)){
