@@ -20,9 +20,11 @@
 	$time = new DateTime();
 	$times = $time->format("Y-m-d H:i:s");
 
-	$string = "INSERT INTO version (note, title, user, time) VALUES ("
+	$string = "INSERT INTO version (note, title, text, user, time) VALUES ("
 		. $no .
 		",'"
+		. $_POST['title'] .
+		"','"
 		. $_POST['title'] .
 		"','"
 		. $_POST['user'] .
