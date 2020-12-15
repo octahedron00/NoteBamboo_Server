@@ -21,7 +21,7 @@
 	$times = $time->format("Y-m-d H:i:s");
 
 	$string = "INSERT INTO version (note, title, user, time) VALUES ("
-		. $_no .
+		. $no .
 		",'"
 		. $_POST['title'] .
 		"','"
