@@ -1,11 +1,11 @@
 <?php
 	$con = mysqli_connect("localhost","crud","qwerty2020","notebamboo");
 
-	$string = "INSERT INTO note (list, title) VALUES ("
+	$string = "INSERT INTO note (list, title, visible) VALUES ("
 		. $_POST['list'] .
 		",'"
 		. $_POST['title'] .
-		"');";
+		"',1);";
 
 	echo $string." ";
 	$result = mysqli_query($con, $string);

@@ -1,6 +1,6 @@
 <?php
 	$con = mysqli_connect("localhost","crud","qwerty2020","notebamboo");
-	$result = mysqli_query($con, "SELECT no, title FROM note where list=".$_POST['list'].";");
+	$result = mysqli_query($con, "SELECT no, title, visible FROM note where list=".$_POST['list'].";");
 
 	$response = array();
 	while($row = mysqli_fetch_array($result)){
