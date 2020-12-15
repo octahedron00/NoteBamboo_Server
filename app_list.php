@@ -7,6 +7,6 @@
 		array_push($response, $row);
 	}
 
-	echo json_encode(array("response" => $response);
+	echo json_encode(array("response" => $response));
 	mysqli_close($con);
  ?>
