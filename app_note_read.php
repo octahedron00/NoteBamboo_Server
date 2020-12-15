@@ -1,6 +1,6 @@
 <?php
 	$con = mysqli_connect("localhost","crud","qwerty2020","notebamboo");
-	$result = mysqli_query($con, "SELECT title, text, user, time FROM version where note=".$_POST['note'].";");
+	$result = mysqli_query($con, "SELECT no, title, text, user, time FROM version where note=".$_POST['note'].";");
 
 	$response = array();
 	$response['success'] = false;

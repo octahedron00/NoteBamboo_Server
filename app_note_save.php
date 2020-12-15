@@ -4,7 +4,7 @@
 	$time = new DateTime();
 	$times = $time->format("Y-m-d H:i:s");
 
-	$string = "INSERT INTO version (note, title, text, user, time) VALUES ("
+	$string = "INSERT INTO version (note, title, text, user, time, parent) VALUES ("
 		. $_POST['note'] .
 		",'"
 		. $_POST['title'] .
@@ -14,7 +14,9 @@
 		. $_POST['user'] .
 		"','"
 		. $times .
-		"');";
+		"',"
+		. $_POST['parent'] .
+		");";
 
 	echo $string;
 	$result = mysqli_query($con, $string);
