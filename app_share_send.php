@@ -9,6 +9,7 @@
 		$bool = true;
 		$go = false;
 	}
+	echo "HEllo";
 
 	echo $bool;
 /*
