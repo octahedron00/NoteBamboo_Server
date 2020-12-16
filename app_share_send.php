@@ -2,8 +2,7 @@
 	$con = mysqli_connect("localhost","crud","qwerty2020","notebamboo");
 
 	$result = mysqli_query($con,"SELECT no FROM list WHERE user=".$_POST['user']." AND list=".$_POST['list'].";");
-	echo $result;
-/*
+
 	$bool = false;
 	$go = true;
 	while($row = mysqli_fetch_array($result)){
@@ -11,6 +10,8 @@
 		$go = false;
 	}
 
+	echo $bool;
+/*
 	if($go){
 		$string = "INSERT INTO share (list, user_to, level, user_from, owner, name, AES_key) VALUES ("
 			. $_POST['list'] .
