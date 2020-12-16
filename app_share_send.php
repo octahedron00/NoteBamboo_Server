@@ -30,6 +30,6 @@
 		$result = mysqli_query($con, $string);
 	};
 */
-	echo json_encode(array('success' => $bool););
+	echo json_encode(array("success" => $bool););
 	mysqli_close($con);
  ?>
