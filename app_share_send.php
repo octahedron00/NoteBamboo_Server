@@ -8,8 +8,8 @@
 		$bool = true;
 	}
 
-	if($bool){
-		$string = "INSERT INTO share (list, user_to, user_from, level, owner, name, AES_key) VALUES ("
+	if(!$bool){
+		$string = "INSERT INTO share (list, user_to, level, user_from, owner, name, AES_key) VALUES ("
 			. $_POST['list'] .
 			","
 			. $_POST['user'] .
