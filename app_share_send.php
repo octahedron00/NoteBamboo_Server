@@ -2,6 +2,7 @@
 	$con = mysqli_connect("localhost","crud","qwerty2020","notebamboo");
 
 	$result = mysqli_query($con,"SELECT no FROM list WHERE user=".$_POST['user']." AND list=".$_POST['list'].";");
+	echo $result;
 /*
 	$bool = false;
 	$go = true;
