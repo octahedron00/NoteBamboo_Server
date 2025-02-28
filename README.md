@@ -1,3 +1,11 @@
+# NoteBamboo_Server
+
+대나무노트 앱 서버 시스템. (현재 사용 중지됨)
+
+LAMP(MariaDB) 기반으로 이루어져있었으며, 다음과 같은 구조를 가진다.
+
+app.php 를 통해 POST 데이터를 주고받음, 그 외의 php는 첫 출시 당시 기능적으로 분산된 상태.
+
 #1.0.0(21.08.12, 1)
 출시
 
@@ -29,6 +37,9 @@ select : while($row = mysqli_fetch_array($result)){};
 select(all) : $response['array'] = $array;
 			$array[1]['no'], '$row' pull
 
+
+
+DB 구조는 다음과 같다.
 
 MariaDB [notebamboo]> show tables;
 +----------------------+
